@@ -18,9 +18,9 @@ new ScrollMagic.Scene({
 
 .setTween("#img-ecommerce", {y:50})
 
-.addIndicators({
-    name: 'fade scene',
-    colorTrigger: 'black',
-    colorStart: '#000',
-    colorEnd: 'black'
-}).addTo(controller)
+// .addIndicators({
+//     name: 'fade scene',
+//     colorTrigger: 'black',
+//     colorStart: '#000',
+//     colorEnd: 'black'
+// }).addTo(controller)
