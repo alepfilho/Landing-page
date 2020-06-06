@@ -45,7 +45,7 @@ function jsTask() {
 // replace
 const cbString = new Date().getTime();
 function cacheBurstTask() {
-    return src(['index.html'])
+    return src(['*.html'])
         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
         .pipe(dest('build/'))
         .pipe(browserSync.stream());
@@ -71,7 +71,8 @@ function watchTask() {
         }
     });
     watch(files.scssPath, scssTask)
-    watch(files.jsPath).on('change', browserSync.reload);
+    watch(files.jsPath, jsTask).on('change', browserSync.reload);
+    watch(files.imgPath, optImageTask).on('change', browserSync.reload);
     watch('*.html').on('change', cacheBurstTask);
 }
 // Default task
