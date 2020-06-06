@@ -23,4 +23,5 @@ new ScrollMagic.Scene({
 //     colorTrigger: 'black',
 //     colorStart: '#000',
 //     colorEnd: 'black'
-// }).addTo(controller)
+// })
+.addTo(controller)
