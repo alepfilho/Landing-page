@@ -18,12 +18,12 @@
         img:last-child{
             position: absolute;
             z-index: 0;
-            top: -30px;
+            top: 0;
             left:0;
             max-width: 90vw ;
             transition: 1s;
             &:hover{
-                transform: translateY(-20px) !important;
+                transform: translateY(-50px) !important;
                 z-index: 2;
             }
         }
